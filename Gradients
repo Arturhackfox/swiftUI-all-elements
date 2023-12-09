@@ -1,0 +1,19 @@
+RoundedRectangle(cornerRadius: 25)
+            .fill(
+//                LinearGradient(
+//                    gradient: Gradient(colors: [Color.yellow, Color.orange]),
+//                    startPoint: .leading,
+//                    endPoint: .trailing)
+                //-----------------------
+//                RadialGradient(
+//                    colors: [Color.yellow, Color.orange],
+//                    center: .leading,
+//                    startRadius: 5,
+//                    endRadius: 333)
+                //-----------------------
+//                AngularGradient.init(
+//                    gradient: Gradient(colors: [Color.yellow, Color.pink]),
+//                    center: .topLeading,
+//                    angle: .degrees(190 + 34))
+            )
+            .frame(width: 350, height: 200, alignment: .center)
