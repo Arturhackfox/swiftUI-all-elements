@@ -1,0 +1,21 @@
+ Image(systemName: "heart.fill")
+            .font(.system(size: 70))
+            .background(
+                Circle()
+                    .fill(
+                        LinearGradient(colors: [.pink, .purple], startPoint: .leading, endPoint: .trailing)
+                    )
+                    .frame(width: 120, height: 120, alignment: .center)
+                    .shadow(color: .mint, radius: 12)
+                    .overlay(
+                        Circle()
+                            .fill(
+                                Gradient(colors: [.red, .pink])
+                            )
+                            .overlay(
+                                Image(systemName: "hand.thumbsup.fill")
+                            )
+                            .frame(width: 35, height: 35)
+                           
+                        , alignment: .bottomTrailing)
+            )
