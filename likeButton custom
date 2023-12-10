@@ -15,6 +15,7 @@
                             .overlay(
                                 Image(systemName: "hand.thumbsup.fill")
                             )
+                            .shadow(radius: 10)
                             .frame(width: 35, height: 35)
                            
                         , alignment: .bottomTrailing)
