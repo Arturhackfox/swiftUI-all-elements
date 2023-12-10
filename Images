@@ -1,0 +1,6 @@
+  Image("led")
+            .resizable()
+            .scaledToFit()
+            .clipShape(RoundedRectangle(cornerRadius: 25))
+            .frame(width: 300, height: 500, alignment: .center)
+            .shadow(color: .purple, radius: 15, x: 0.7, y: -0.6)
