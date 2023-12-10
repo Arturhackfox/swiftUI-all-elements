@@ -1,0 +1,8 @@
+Image(systemName: "cloud")
+            .resizable()
+//            .aspectRatio(contentMode: .fit)
+            .scaledToFill()
+//            .font(.system(size: 250))
+            .foregroundStyle(Color.blue)
+            .frame(width: 300, height: 300)
+            .clipped() // clipsarrow.down.to.line.alt edges
