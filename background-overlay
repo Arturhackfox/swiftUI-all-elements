@@ -1,0 +1,39 @@
+VStack{
+            // Background goes behind object
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                .frame(width: 300, height: 300, alignment: .center)
+                .background(
+                    //                Color.red
+                    //                Image("led")
+                    //                Gradient(colors: [.red, .pink])
+                    Circle()
+                        .fill(LinearGradient(colors: [.clear, .orange], startPoint: .leading, endPoint: .trailing))
+                    
+                )
+            
+            //Overlay goes on top of the object
+            Circle()
+                .fill(LinearGradient(colors: [.pink, .yellow], startPoint: .leading, endPoint: .bottom))
+                .frame(width: 350)
+                .overlay(
+                    VStack{
+                        HStack{
+                            Circle()
+                                .fill(LinearGradient(colors: [.clear, .teal], startPoint: .top, endPoint: .leading))
+                                .frame(width: 150 , height: 130, alignment: .leading)
+                            Circle()
+                                .fill(LinearGradient(colors: [.clear, .indigo], startPoint: .top, endPoint: .trailing))
+                                .frame(width: 150, height: 130, alignment: .trailing
+                                )
+                        }
+                        RoundedRectangle(cornerRadius: 33)
+                            .fill(.black)
+                            .frame(width: 70, height: 80 , alignment: .center)
+                    }
+                )
+                .background(
+                    RoundedRectangle(cornerRadius: 25)
+                        .fill(LinearGradient(colors: [.black, .pink], startPoint: .top, endPoint: .bottom))
+                        .frame(width: 400)
+                        
+                )
